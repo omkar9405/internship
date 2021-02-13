@@ -1,0 +1,127 @@
+<div class="arrow-back">
+    <span><i class="fa fa-angle-left"></i></span>
+</div>
+<div class="login-box regi-box">
+        <h1>Registration</h1>
+        <form [formGroup]="signupForm" class="form-contact contact_form">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group m-b-25">
+                    <label>First Name<span class="req-color">*</span></label>
+                    <input 
+                    class="form-control input-field" 
+                    formControlName="firstName" 
+                    [(ngModel)]="userDto.firstName"
+                    type="text" 
+                    placeholder="First Name">
+                </div>
+            </div>
+        
+        
+            <div class="col-sm-12">
+                <div class="form-group m-b-25">
+                    <label>Last Name<span class="req-color">*</span></label>
+                    <input class="form-control input-field" 
+                    formControlName="lastName" 
+                    [(ngModel)]="userDto.lastName"
+                     type="text" placeholder="Last Name">
+                </div>
+            </div>
+        
+            <div class="col-sm-12">
+                <div class="form-group m-b-25">
+                    <label>Mobile Number<span class="req-color">*</span></label>
+                    <input class="form-control input-field" 
+                    formControlName="phone" 
+                    [(ngModel)]="userDto.phone"
+                    type="text" placeholder="Last Name">
+                </div>
+            </div>
+        
+        <div class="col-sm-12">
+            <div class="form-group m-b-25">
+            <label>Date of Birth<span class="req-color">*</span></label>
+        
+        
+        <div class="col-12 p-0">
+            <div class="row">
+                <div class="col-3 p-0">
+                    <select class="form-control select-field">
+                    <option>Day</option>
+                    </select>
+                </div>
+                <div class="col-5 p-0">
+                    <select class="form-control select-field">
+                    <option>Month</option>
+                    </select>
+                </div>
+        
+                <div class="col-4 p-0">
+                    <select class="form-control select-field">
+                    <option>Year</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-12">
+        <div class="form-group m-b-25">
+        <label>Email Address<span class="req-color">*</span></label>
+        <input class="form-control input-field" 
+        formControlName="email" 
+        [(ngModel)]="userDto.email"
+        type="text" placeholder="email">
+        </div>
+        </div>
+        
+        
+            <div class="col-sm-12">
+        <div class="form-group m-b-5">
+        <label>Password(Miniumum 8 characters and Alphanumirics)<span class="req-color">*</span></label>
+        <input class="form-control input-field"
+        formControlName="password" 
+        [(ngModel)]="userDto.password"
+        type="text" placeholder="Password">
+        </div>
+        </div>
+        
+    <div class="col-12 m-b-30">
+    
+        <div class="line-5">
+    
+        </div>
+        </div>
+        
+        <div class="col-sm-12">
+        <div class="form-group m-b-25">
+        <label>Confirm Password<span class="req-color">*</span></label>
+        <input class="form-control input-field" 
+        formControlName="confirmPassword" 
+        [(ngModel)]="userDto.confirmPassword"
+        type="text" placeholder="Confirm Password">
+        </div>
+        </div>
+    
+    
+        
+        
+        <div class="col-sm-12">
+        <div class="form-group m-t-25 m-b-25">
+
+            <button (click)="register()" class="button login_btn">Create Account</button>
+        </div>
+        </div>
+    
+    
+    
+    
+    
+        </div>
+        
+        </form>
+    
+</div>
+    
+    

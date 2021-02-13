@@ -1,0 +1,100 @@
+
+
+<div class="arrow-back">
+    <span><i class="fa fa-angle-left"></i></span>
+    </div>
+    
+        <div class="login-box">
+        <h1>Login</h1>
+        
+        <div class="col-12 m-b-30">
+        <div class="row">
+        <div  class="col-6 p-0 text-center">
+        <span class="social fb">
+        <img src="assets/img/fb-icon.png">
+        </span>
+        </div>
+        <div  class="col-6 p-0 text-center">
+        <span class="social goo">
+        <img src="assets/img/google-icon.png">
+        </span>
+        </div>
+        </div>
+        </div>
+        
+        <div class="col-12 m-b-30">
+        <div class="row">
+        <div class="line">
+        <span class="or">OR</span>
+        </div>	
+        </div>
+        </div>
+    
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()"  class="form-contact contact_form">
+        <div class="row">
+        <div class="col-sm-12">
+        <div class="form-group m-b-25">
+        <input 
+        class="form-control input-field" 
+        formControlName="email" 
+        type="email" 
+        placeholder="Email Address">
+        </div>
+        </div>
+    
+    
+        <div class="col-sm-12">
+        <div class="form-group m-b-25">
+        <input 
+        class="form-control input-field" 
+        formControlName="password" 
+        type="password" 
+        placeholder="Password">
+        </div>
+        </div>
+        
+        <div class="col-sm-12">
+        <div class="form-group">
+        <span class="f-pass"><a href="#">Forgot Password?</a></span>
+        </div>
+        </div>
+        
+        
+        <div class="col-sm-12">
+        <div class="form-group m-t-25">
+            <button 
+            [disabled]="loading"
+            class="button login_btn"
+            >
+            <span 
+            *ngIf="loading"
+            class="spinner-border spinner-border-sm mr-1"
+            ></span>
+            Login</button>
+        </div>
+        </div>
+    
+    
+    
+    
+    
+        
+            <div class="col-sm-12">
+        <div class="form-group m-b-25 text-center text-link">
+        Don't have an account? <a href="#">Sign Up</a>
+        </div>
+        </div>
+    
+    
+        </div>
+        
+        </form>
+    
+    
+        </div>
+    
+    
+    
+    
+    
+      

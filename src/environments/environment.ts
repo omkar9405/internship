@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  apiUrl:"http://cms.getspaceshuttle.com/api/auth"
+  //apiUrl:"http://gourl.gr/cylb"
 };
 
 /*

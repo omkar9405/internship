@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "loginregister"
+    }
+  },
+  "defaultProject": "loginregister",
+  "cli": {
+    "analytics": false
+  }
 }
