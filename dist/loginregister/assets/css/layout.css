@@ -1,0 +1,211 @@
+
+.login-box{
+	width:420px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-210px;
+	margin-top:-260px;
+}
+
+.login-box.regi-box{
+	margin-left:-210px;
+	margin-top:0px;
+	top:10%;
+}
+
+.login-box h1{
+	text-align:center;
+	font-size:30px;
+	padding:0px;
+	margin-bottom:50px;
+	color:#288cec;
+}
+
+
+.social{
+	width:60px;
+	height:60px;
+	text-align:center;
+	display:inline-block;
+	border-radius:5px;
+	cursor:pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.40);
+}
+
+
+.social img{
+	width:30px;
+	height:30px;
+	margin:15px;
+}
+
+
+
+.social.fb{
+	border:solid 2px #3b5998;
+}
+
+.social.goo{
+	border:solid 2px #5390f4;
+}
+
+
+.m-b-30{
+	margin-bottom:30px;
+}
+
+.m-b-25{
+	margin-bottom:25px;
+}
+
+.m-t-25{
+	margin-top:25px;
+}
+
+
+.line{
+	background:#f1f2f6;
+	height:3px;
+	width:100%;
+	float:left;
+}
+
+.line-5{
+	background:#9e9e9e;
+	height:5px;
+	width:100%;
+	float:left;
+}
+
+.m-b-5{
+	margin-bottom:5px;
+}
+
+
+.line span.or{
+    background: #fff;
+    color: #288cec;
+    text-align: center;
+    padding:2px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    font-size: 13px;
+    font-weight: 600;
+	margin-left:-10px;
+	margin-top:-11.5px;
+}
+
+.input-field{
+    height: calc(46px + 2px);
+    padding: .75rem .75rem;
+    font-size: 1rem;
+    color: #000;
+    background-color: #f1f2f6;
+    border: 1px solid #f1f2f6;
+}
+
+.select-field{
+    height: calc(46px + 2px);
+    padding: .75rem .75rem;
+    font-size: 1rem;
+    color: #288cec;
+    background-color: #f1f2f6;
+    border: 1px solid #f1f2f6;
+}
+
+.select-field:focus{
+    color: #288cec;
+    background-color: #f1f2f6;
+    border: 1px solid #f1f2f6;
+	outline:none;
+	box-shadow:none;
+}
+
+.input-field:focus{
+    color: #000;
+    background-color: #f1f2f6;
+    border: 1px solid #f1f2f6;
+	outline:none;
+	box-shadow:none;
+}
+
+.input-field::-webkit-input-placeholder { 
+  color:#288cec;
+}
+
+.input-field:-ms-input-placeholder {
+  color:#288cec;
+}
+
+.input-field::placeholder {
+  color:#288cec;
+}
+
+.login_btn{
+    padding: .75rem .75rem;
+    background-color: #288cec;
+    border: 1px solid #f1f2f6;
+	color:#fff;
+	width:100%;
+	border-radius:30px;
+	cursor:pointer;
+	font-size:18px;
+	padding: 10px;
+}
+
+.f-pass{
+	font-size:15px;
+}
+
+.f-pass a{
+	font-size:15px;
+	float:right;
+	color:#fe9a19;
+	font-weight:600;
+}
+
+.f-pass a:hover{
+text-decoration:none;
+}
+
+.arrow-back{
+	    position: fixed;
+	left:20px;
+	top:20px;
+}
+
+.arrow-back span{
+background:#288cec;
+height:25px;
+width:25px;
+border-radius:5px;
+line-height:22.5px;
+text-align:center;
+color:#fff;
+display: inline-block;
+cursor:pointer;
+}
+
+.text-link{
+	color:#808fa4;
+	font-size:16px;
+}
+
+.text-link a{
+	color:#288cec;
+}
+
+.req-color{
+	color:#ff0000;
+}
+
+.form-group label{
+	margin:0px;
+}
+	
+
+
+
+	
