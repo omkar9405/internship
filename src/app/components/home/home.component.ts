@@ -8,7 +8,7 @@ import { AuthenticationService } from 'src/app/_services/authentication.service'
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  name=localStorage.getItem('name');
+  username=localStorage.getItem('name');
   email=localStorage.getItem('email');
   constructor(
     private router:Router,private route:ActivatedRoute
