@@ -21,7 +21,7 @@ export class AuthenticationService {
     }
     headers= new HttpHeaders({
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'http://localhost:4200',
+        'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Credentials': 'false'
 });
     login(email: string, password: string) {
@@ -56,18 +56,14 @@ export class AuthenticationService {
       }
 
     logout(email: string, password: string) {
-        //remove Customer from local storage to log Customer out
-        //https://cms.getspaceshuttle.com/api/auth/signout
-        //https://cms.getspaceshuttle.com/api/auth/signin_with_social_media
-        //https://cms.getspaceshuttle.com/api/auth/signout :- for logout 
         return this.http.post<any>(`${environment.apiUrl}/signout`, { email, password })
-        .pipe(map(user=>{
+        .pipe(map(message=>{
         localStorage.removeItem('currentUser');
         localStorage.removeItem('email');
         localStorage.removeItem('password');
         localStorage.removeItem('Token');
         this.currentUserSubject.next(null);
-        return user;
+        return message;
         }));
     }
 }

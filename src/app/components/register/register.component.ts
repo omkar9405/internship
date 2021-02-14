@@ -47,6 +47,7 @@ export class RegisterComponent implements OnInit {
 
 
         this.loading = true;
+        if(this.userDto.password==this.userDto.confirmPassword){
     this.authenticationService.signup(this.userDto).subscribe(
       (data:any) => {
         console.log(data);
@@ -60,6 +61,10 @@ export class RegisterComponent implements OnInit {
         this.loading =false;
     
     });
+  }else
+  {
+    this.error='Password and confirm password not match';
+  }
   }
 
 

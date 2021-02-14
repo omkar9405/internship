@@ -45,7 +45,10 @@
         
         <div class="col-12 p-0">
             <div class="row">
-                <div class="col-3 p-0">
+                <input class="form-control input-field" 
+                name="dob"
+                type="date" placeholder="choose date">
+                <!-- <div class="col-3 p-0">
                     <select class="form-control select-field">
                     <option>Day</option>
                     </select>
@@ -60,7 +63,7 @@
                     <select class="form-control select-field">
                     <option>Year</option>
                     </select>
-                </div>
+                </div> -->
             </div>
         </div>
             </div>
@@ -111,8 +114,15 @@
         <div class="form-group m-t-25 m-b-25">
 
             <button (click)="register()" class="button login_btn">Create Account</button>
+            <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+        
         </div>
         </div>
+        <div class="col-sm-12">
+            <div class="form-group m-b-25 text-center text-link">
+            Already have an account? <a [routerLink]="[ '/login' ]" routerLinkActive="true" >Sign In</a>
+            </div>
+            </div>
     
     
     
