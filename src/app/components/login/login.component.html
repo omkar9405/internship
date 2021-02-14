@@ -10,13 +10,20 @@
         <div class="col-12 m-b-30">
         <div class="row">
         <div  class="col-6 p-0 text-center">
-        <span class="social fb">
+        <!-- <span class="social fb">
         <img src="assets/img/fb-icon.png">
-        </span>
+        </span> -->
+        <button id="signinButton">Sign in with Google</button>
+        <script>
+          $('#signinButton').click(function() {
+            // signInCallback defined in step 6.
+            auth2.grantOfflineAccess().then(signInCallback);
+          });
+        </script>
         </div>
         <div  class="col-6 p-0 text-center">
         <span class="social goo">
-        <img src="assets/img/google-icon.png">
+        <button id="signin"><img src="assets/img/google-icon.png"></button>
         </span>
         </div>
         </div>
