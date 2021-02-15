@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  apiUrl:"http://cms.getspaceshuttle.com/api/auth"
+  apiUrl:"https://cms.getspaceshuttle.com/api/auth"
   //apiUrl:"http://gourl.gr/cylb"
 };
 

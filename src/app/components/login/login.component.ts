@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
   });
 
   // get return url from route parameters or default to '/'
-  this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/home';
+  this.returnUrl = '/home';
   }
   get f() { return this.loginForm.controls; }
 
@@ -48,10 +48,8 @@ export class LoginComponent implements OnInit {
     this.loading = true;
     this.authenticationService.login(this.f.email.value, this.f.password.value)
         .subscribe(
-            data => {
-                alert("Login Successful..");
-            
-                console.log(localStorage.getItem('Token'));
+          (data:any) => {
+                console.log(data);
                 this.router.navigate(['/home']);
                
             },

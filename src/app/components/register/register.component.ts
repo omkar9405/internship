@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
    "phone": "",
    "password":"",
    "confirmPassword": "",
-   "type":""
+   "type":"TCO"
   }
   loading = false;
   submitted = false;
